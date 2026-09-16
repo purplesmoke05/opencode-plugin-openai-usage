@@ -1,0 +1,38 @@
+{
+  "name": "opencode-plugin-openai-usage",
+  "version": "0.1.0",
+  "description": "opencode TUI sidebar plugin showing OpenAI (ChatGPT/Codex OAuth) plan usage and credits",
+  "type": "module",
+  "main": "dist/tui.js",
+  "types": "dist/tui.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "tui",
+    "openai",
+    "usage"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@opencode-ai/plugin": "^1",
+    "solid-js": "1.9.12",
+    "@opentui/solid": "0.5.9",
+    "@opentui/core": "0.5.9"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.18.4",
+    "@types/bun": "^1.2.0",
+    "typescript": "^5.7.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
+    "typecheck": "tsc -p tsconfig.tui.json"
+  },
+  "dependencies": {}
+}
